@@ -1,4 +1,4 @@
-\documentclass{res}
+\documentclass[12pt]{res}
 \usepackage{color}
 \usepackage{changepage}
 \usepackage[utf8]{inputenc}
@@ -17,9 +17,9 @@
 
 \newenvironment{ResumeBlock}[1]
 {
-	\begin{normalsize}
+	\begin{large}
 		\raisebox{0pt}[12pt][8pt]{\textcolor{lightblue}{#1}}
-	\end{normalsize}
+	\end{large}
 	\\
 }
 {	
@@ -54,15 +54,14 @@
 			\raisebox{0pt}[18pt][7pt]{Sean Tyler Atwell}
 		\end{LARGE}}}
 		\\		 
-		\begin{large}			
-			\makebox[\textwidth][r]{\textit{\raisebox{0pt}[12pt][5pt]{128 Atwell Rd., Slocomb, AL 36375,  (334) 796-8921, sta0003@auburn.edu}}}
-		\end{large}
+		\begin{small}			
+			\makebox[\textwidth][r]{\textit{\raisebox{0pt}[12pt][5pt]{10440 Swift Stream Place Bldg 14 Apt 404, Columbia, MD 21044,  (334) 796-8921, sta0003@auburn.edu}}}
+		\end{small}
 	\end{Huge}
 	\\	
 	\begin{ResumeBlock}{EDUCATION}
 		\begin{DetailsBlock}{Bachelors of Electrical Engineering (B.E.E.), Computer Engineering Option - Auburn University}{August 2010 - December 2014}
 			\begin{itemize}
-				\item Acquired skills: C, Java, C++, Assembly, HCS12 architecture, VHDL, Wireshark, Nmap, and Metasploit 
 				\item Senior Design under the direction of Dr. Chwan-Hwa Wu, with a focus on computer security.  We developed a secure wrapper around a VPN Server to provide silent user authentication and attack prevention. 
 			\end{itemize}
 		\end{DetailsBlock}
@@ -73,55 +72,47 @@
 			\raisebox{0pt}[1pt][1pt]{\space}
 		\end{DetailsBlock}
 	\end{ResumeBlock}		
-	\hline
+	\hrule
 	\begin{ResumeBlock}{EXPERIENCE}
-		\begin{DetailsBlock}{Spec III Info Tech, Auburn OIT - AU Leasing Department}{August 2015 - Present}
+		\begin{DetailsBlock}{Interactive On-Net Operator - United States Department of the Army}{June 2016 - present}
 			\begin{itemize}
-				\item Acquired Skills:  Angular JS and Knockout JS 
-				\item Work with the AU Lease Group to develop and maintain software solutions for managing all the leased computers on Auburn's campus
-				\item Manage an assigned junior developer's work on various AU Lease projects
-				\item Integrate the leasing software with third party vendor  applications to collect pricing information, available products, and product information changes
+				\item Section is pending pre-publication review.
 			\end{itemize}
 			~\\
 			Notable Projects:
 			\begin{itemize}
-				\item AU Lease Public - This project accepts applications for new leases.  It handles all the publicly facing portions of the leasing process including placing orders, renewing leases, and scheduling times to have a leased machine delivered. 
-				\item AU Lease Data - This project manages the life-cycle of machines leased on campus.  It generates all the billing documentation and end of lease information needed to correctly manage the leases.    
+				\item Section is pending pre-publication review.
 			\end{itemize}
-		\end{DetailsBlock}		
-		\begin{DetailsBlock}{TES Software Developer, Auburn OIT - Campus Web Solutions}{January 2015 - August 2015}
+		\end{DetailsBlock}	
+		\begin{DetailsBlock}{Spec III Info Tech, Auburn OIT - AU Leasing Department}{January 2015 - May 2016}
 			\begin{itemize}
-				\item Develop software solutions for Campus Web Solutions
-				\item Serve as a mentor for new developers, aiding them in learning the .NET Framework and good coding practices 
-				\item Provide development support on several legacy applications
+				\item Worked with the AU Lease Group to develop and maintain software solutions for managing all the leased computers on Auburn's campus
+				\item Integrated the leasing software with third party vendor applications to collect pricing information, available products, and product information changes
+                \item Served as a mentor for new developers, aiding them in learning the .NET Framework and good coding practices 
+				\item Provided development support on several legacy applications
 			\end{itemize}
 			~\\
 			Notable Projects:
 			\begin{itemize}
-				\item Big Testing Center Scheduler - This is an application for Testing Services that allows them to create and manage seats in their testing facilities.  I overhauled the core of this application, optimizing it to run quickly under the load it was experiencing.
-				\item Veteran Swipe - A system that was developed for the Department of Veteran's Affairs.  This application allows people who want to utilize Veteran's Affairs resources to swipe their student ID cards at the front entrance.  The project then provides analytics regarding resource utilization to the Department Resource Manager.
-				\item OIT Bootcamp Scheduler - This project manages all the classes that Campus Web Solutions offers each semester when they are training a new Co-op group. 
+				\item AU Lease Suite - This project handled all the publicly facing portions of the leasing process including placing orders, renewing leases, and scheduling times to have a leased machine delivered.  The backend of the project manages the life-cycle of machines leased on campus, generating all the billing documentation and end of lease information needed to correctly manage leases.    
+                \item Veteran Swipe - A system that was developed for the Auburn Department of Veteran's Affairs.  This application allowed people who want to utilize Veteran's Affairs resources to swipe their student ID cards at the front entrance.  Analytics from this system were used to optimize resource allocation for veteran services.
 			\end{itemize}
 		\end{DetailsBlock}		
 		\begin{DetailsBlock}{Programming Team Lead, TgL Communications}{September 2012 - February 2016}
 			\begin{itemize}
-				\item Acquired Skills:  MySQL, PHP, IIS Server, Python, RS-232 protocol, MC9090 Development, and Git 
-				\item Coordinate development on software projects 
-				\item Discuss project specifications with clients, and work with floor workers to determine what was needed for a given project 
-				\item Lead a team of up to four software developers 
+				\item Discussed project specifications with clients, and work with floor workers to determine what was needed for a given project 
+				\item Led a team of up to four software developers, coordinating development on various software projects
 			\end{itemize}
 			~\\
 			Notable Projects:
 			\begin{itemize}
-				\item JFA Function Tester Monitor - This application prints labels for products going through a JFA function tester, then keeps track of data about that given part.  It tracks how many times it had to be run to pass inspection, as well as reasons for the failures (if any).  This project also required additions to an existing piece of Visual Basic 6 software to add networking capabilities.
-				\item Inventory Manager - This application keeps track of the current inventory across several warehouses, and provides barcoded labels for ease of tracking.  This was developed in C\# using the MVC3 framework. 
-				\item Serial Data Collector - This project pulls data from several PLC driven machines to analyze production trends.  This was developed using Python and PHP. 
-				\item Foam Plant Management Software - This project is used to manage product development workflow at the SCA Automotive Foam Plant.  It provides feedback to the workers to help them select the correct raw materials for a given product, and prints invoices for outgoing shipments of finished products.   
+				\item JFA Function Tester Monitor - This application printed labels for products going through a JFA function tester, then kept track of data about that given part.  It also tracked how many times it had to be run to pass inspection, as well as reasons for the failures (if any).
+				\item Inventory Manager - This application kept track of the current inventory across several warehouses, and provided barcoded labels for ease of tracking. 
+				\item Serial Data Collector - This project pulled data from several PLC driven machines to analyze production trends.   
 			\end{itemize}
 		\end{DetailsBlock}		
 		\begin{DetailsBlock}{Co-op Web Developer, Auburn OIT - Campus Web Solutions}{May 2012 – December 2013, August 2014 – December 2014 }
 			\begin{itemize}
-				\item Acquired Skills:  C\#, MVC Framework, MS SQL, JavaScript, jQuery, CSS, and Team Foundation Server 
 				\item Managed several pieces of legacy code
 				\item Developed new products for various campus departments 
 				\item Produced internal applications to improve team efficiency 
@@ -129,27 +120,26 @@
 			~\\
 			Notable Projects:
 			\begin{itemize}
-				\item Office of Accessibility Proctored Exam Tracking System - This project allows students with disabilities to request an alternate exam time.  The test is then administered by an Office of Accessibility proctor, who will ensure that the student’s needs are met.   
-				\item SEND Error Tracking - This project captures errors as they occur in CWS's applications and logs them in a central database.  I also developed a front end to display relevant information and trend analysis.  This was developed in C\# using the MVC3 framework. 
-				\item OIT Migration Tool - This project manages the code migration process for the cws.auburn.edu domain.  Applications are put onto the staging server, and this tool is used to schedule moving them to the production environment. 
+				\item SEND Error Tracking - This project captured errors as they occured across the entire enterprise and logged them in a central database.  The front end displayed relevant information, alerting, and trend analysis. 
+				\item OIT Migration Tool - This project managed all of the code migrations from the development server to the production server for our office.
 			\end{itemize}
 			\raisebox{0pt}[1pt][1pt]{\space}
 		\end{DetailsBlock}
 	\end{ResumeBlock}	
-	\\\hline
+	\hrule
 	\begin{ResumeBlock}{TECHNICAL SKILLS}		
 		\begin{DetailsBlockNoSubheader}{Professional Skills}
 			\begin{tabular}{ l l l l l }
 				C\# & MS SQL & IIS Server & MVC Framework & Team Foundation Server \\ 
 				JavaScript & PHP & jQuery & Git & Angular JS \\
 				MySQL & CSS & JSON & Knockout JS & WPF \\
+				Wireshark & Python & Nmap & Metasploit Framework & Reverse Engineering \\
 			\end{tabular}
 		\end{DetailsBlockNoSubheader}
 		\begin{DetailsBlockNoSubheader}{Other Skills}	
 			\begin{tabular}{ l l l l l }
-				Wireshark & Python & C++ & Unity development & RS-232 protocol \\ 
-				VHDL & Assembly & C & Arduino development & HCS12 architecture \\ 
-				Java & Nmap & Cordova & MC9090 development \\
+				Java & C/C++ & VHDL & Unity development & RS-232 protocol \\ 
+				MC9090 development & Assembly & Cordova & Arduino development & HCS12 architecture \\ 
 			\end{tabular}
 		\end{DetailsBlockNoSubheader}
 	\end{ResumeBlock}
